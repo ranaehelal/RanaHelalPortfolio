@@ -106,28 +106,40 @@ section {
 /*----------------------------*/
 #intro {
     background-image: url('../images/introbg.jpg');
-     background-size: contain; /* Adjusted to contain the background image within the section */
-    background-repeat: repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the background image covers the section */
     background-position: center; /* Center the background image */
-
-    padding: 250px; /* Adjust padding as needed */
-
-    background-color: #000000;
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    padding: 150px 40px; /* Adjust padding for better appearance on small screens */
     color: white;
+    text-align: center;
 }
 
-.intro-name h1{
-    font-size: 50px;
+.intro-name h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
     font-weight: bold;
-    padding: 5px 10px 0px;
+    padding: 5px 10px;
 }
-.intro-name p{
-    font-size: 19px;
+
+.intro-name p {
+    font-size: 18px; /* Adjust font size for smaller screens */
     padding: 0px 10px;
-    margin-left: 15px;
-
-
+    margin: 0;
 }
+
+@media (max-width: 768px) {
+    #intro {
+        padding: 100px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .intro-name h1 {
+        font-size: 32px; /* Adjust heading font size for smaller screens */
+    }
+
+    .intro-name p {
+        font-size: 16px; /* Adjust paragraph font size for smaller screens */
+    }
+}
+
 /*----------------------------*/
 #about, #projects, #contact ,#skills{
     background-color:#1E1E1Eff;
@@ -343,29 +355,34 @@ section {
 /*----------------------------*/
 
 #contact {
-    padding: 70px;
+    padding: 40px 20px; /* Reduced padding for smaller screens */
     background-color: #f2f2f2;
     text-align: center;
 }
 
 #contact h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 32px; /* Adjusted font size */
+    margin-bottom: 20px; /* Reduced margin */
     color: #333;
 }
 
 .contact-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; /* Space between contact info sections */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 15px; /* Reduced space between contact info sections */
+    margin: 0 auto; /* Center container */
 }
 
 .contact-info {
-    font-size: 18px;
+    font-size: 16px; /* Slightly smaller font size */
     color: #333;
     display: flex;
     align-items: center;
+    flex: 1 1 200px; /* Adjusted minimum width */
+    max-width: 300px; /* Limited maximum width */
+    margin-bottom: 10px; /* Reduced space between contact info items */
+    text-align: center; /* Center text for smaller screens */
 }
 
 .contact-info p {
@@ -375,9 +392,9 @@ section {
 }
 
 .contact-icon {
-    width: 24px;
+    width: 24px; /* Adjusted icon size */
     height: 24px;
-    margin-right: 10px;
+    margin-right: 10px; /* Reduced space between icon and text */
 }
 
 .contact-info a {
@@ -389,7 +406,6 @@ section {
 .contact-info a:hover {
     color: #0056b3;
 }
-
 
 
 footer {
