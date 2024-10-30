@@ -351,6 +351,60 @@ section {
 .project-info a:hover {
     background-color: #333;
 }
+/*----------------------------*/
+#experience {
+    padding: 70px; /* Add padding for better spacing */
+    background-color: #1E1E1Eff; /* Match the background color */
+    color: white; /* Ensure text is readable */
+    text-align: center; /* Center the text */
+}
+
+#experience h2 {
+    font-size: 36px; /* Large heading for visibility */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: bold; /* Make the heading stand out */
+}
+
+.experience-item {
+    background-color: rgba(242, 242, 242, 0.2); /* Slightly transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside each experience item */
+    margin: 20px auto; /* Center the item with vertical spacing */
+    width: auto ; /* Limit the maximum width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.experience-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.experience-item h3 {
+    font-size: 28px; /* Heading size for job title */
+    margin: 10px 0; /* Space above and below */
+    color: #000000; /* Custom color for job title */
+}
+
+.experience-item h4 {
+    font-size: 20px; /* Smaller size for the company name */
+    margin: 5px 0; /* Space above and below */
+}
+
+.experience-item p {
+    font-size: 16px; /* Regular text size */
+    line-height: 1.6; /* Improve readability */
+    margin: 5px 0; /* Space above and below */
+}
+
+.experience-item a {
+    color: #01316c; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.experience-item a:hover {
+        color: rgba(102, 152, 189, 0.94); /* Change color on hover */
+}
 
 /*----------------------------*/
 
